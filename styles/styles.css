@@ -1,0 +1,219 @@
+/*VARS*/
+/*color palet*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Glory', sans-serif;
+  letter-spacing: 1px;
+  background-color: #fff;
+}
+
+body {
+  max-width: 1000px;
+  margin: 10px auto;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+body > * {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav .divRepertorio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+  background-color: #FFEFD3;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.nav .divRepertorio .repertorio {
+  padding: 5px;
+  color: #FFEFD3;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 5px 0;
+  background-color: #294C60;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+          box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.nav .songs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 10px;
+  height: 300px;
+  padding: 10px;
+  background-color: #001B2E;
+}
+
+.nav .songs a {
+  padding: 8px;
+  background-color: #fff;
+  color: #294C60;
+  font-weight: 600;
+  border-radius: 4px;
+  margin: 5px 0;
+  letter-spacing: 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+header {
+  background-color: #FFC49B;
+}
+
+header .sectionInfo {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid;
+}
+
+header .sectionInfo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 30%;
+}
+
+header .sectionInfo div h2 {
+  font-size: 1.2rem;
+}
+
+header .sectionInfo .songInfo, header .sectionInfo .toneInfo {
+  border: 1px solid;
+  padding: 5px;
+  background-color: #FFEFD3;
+}
+
+header .sectionInfo .changeTone {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+header .sectionInfo .changeTone button {
+  width: 70px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #FFEFD3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  font-weight: 300;
+}
+
+main {
+  padding-top: 10px;
+  border-bottom: 1px solid;
+}
+
+main .sectionChords {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .sectionChords .column {
+  min-width: 25%;
+}
+
+main .sectionChords .column div {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .sectionChords .column div .chordPart {
+  text-align: center;
+  background-color: #ADB6C4;
+}
+
+main .sectionChords .column div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 8px 0;
+}
+
+main .sectionChords .column div p span {
+  text-align: center;
+}
+
+.d-none {
+  display: none !important;
+}
+/*# sourceMappingURL=styles.css.map */

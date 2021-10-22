@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cancionero</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Glory:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+	<nav class="nav">
+			<div class="divRepertorio">
+				<a class="repertorio">REPERTORIO</a>
+			</div>
+			<div class="songs"></div>
+	</nav>
+
+	<header>
+		
+		<section class="sectionInfo">
+
+			<div class="songInfo">
+				<h1 class="songName"></h1>
+				<h2>Autor: <span class="autor"></span></h2>
+			</div>
+			<div class="toneInfo">
+				<h3>Tono original: <span class="originalTone"></span></h3>
+				<h3>Tono preferido: <span class="favoriteTone"></span></h3>	
+				<h3>Tono actual: <span class="actualTone"></span></h3>
+			</div>
+
+			<div class="changeTone">
+				<button class="stDown">
+					-1 ST
+				</button>
+				<button class="stUp">
+					+1 ST
+				</button>
+			</div>
+
+		</section>	
+	</header>
+	
+	<main>
+		<section class="sectionChords">	
+		</section>		
+	</main>
+
+<script type="text/javascript" src="js/domVars.js"></script>
+<script type="text/javascript" src="js/tones.js"></script>
+<script type="text/javascript" src="js/songs.js"></script>
+<script type="text/javascript" src="js/changeTone.js"></script>
+<script type="text/javascript" src="js/showRepertorio.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

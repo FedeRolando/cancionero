@@ -1,0 +1,14 @@
+const d = document,
+$header = d.querySelector("header"),
+$main = d.querySelector("main");
+$nav = d.querySelector(".nav"),
+$repertorio = d.querySelector(".repertorio"),
+$songs = d.querySelector(".songs")
+$chords = d.querySelector(".sectionChords"),
+$stDown = d.querySelector(".stDown"),
+$stUp = d.querySelector(".stUp"),
+$songName = d.querySelector(".songName"),
+$autor =  d.querySelector(".autor"),
+$originalTone =  d.querySelector(".originalTone"),
+$favoriteTone =  d.querySelector(".favoriteTone"),
+$actualTone = d.querySelector(".actualTone");

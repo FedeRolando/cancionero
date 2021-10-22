@@ -1,0 +1,166 @@
+/*VARS*/
+/*color palet*/
+$color1: #001B2E;
+$color2: #294C60;
+$color3: #ADB6C4;
+$color4: #FFEFD3;
+$color5: #FFC49B;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	font-family: 'Glory', sans-serif;
+	letter-spacing: 1px;
+	background-color: #fff;
+}
+
+body {
+	max-width: 1000px;
+	margin: 10px auto;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+body > * {
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+a:hover,button:hover {
+	cursor: pointer;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	.divRepertorio {
+		display: flex;
+		justify-content: center;
+		padding: 5px 0;
+		background-color: $color4;
+		border-bottom: 1px solid;
+		border-top: 1px solid;
+		box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+		.repertorio {
+				padding: 5px;
+				color: $color4;
+				text-decoration: none;
+				font-size: 1.3rem;
+				font-weight: bold;
+				border-radius: 5px;
+				margin: 5px 0;
+				background-color: $color2;
+				box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+			}
+	}
+	.songs {
+		display: flex;
+		flex-flow: row wrap;
+		align-content: flex-start;
+		gap: 10px;
+		height: 300px;
+		padding: 10px;
+		background-color: $color1;
+		a {
+			padding: 8px;
+			background-color: #fff;
+			color: $color2;
+			font-weight: 600;
+			border-radius: 4px;
+			margin: 5px 0;
+			letter-spacing: 1px;
+			box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+		}
+	}
+}
+
+header {
+	background-color: $color5;
+
+	.sectionInfo {
+		padding: 15px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		border-bottom: 1px solid;
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			min-width: 30%;
+			h1{
+
+			}
+			h2{
+				font-size: 1.2rem;
+			}
+			h3{
+
+			}
+		}
+		.songInfo,.toneInfo{
+			border: 1px solid;
+			padding: 5px;
+			background-color: $color4;
+
+		}
+		.songInfo{
+			
+
+		}
+		.toneInfo {
+			
+		}
+		.changeTone {
+			flex-direction: row;
+			justify-content: center;
+			gap: 10px;	
+			button {
+				width: 70px;
+				padding: 10px;
+				border: 1px solid;
+				border-radius: 4px;
+				background-color: $color4;
+				box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+				font-weight: 300;
+			}
+		}	
+	}	
+}
+
+
+main {
+	padding-top: 10px;
+	border-bottom: 1px solid;
+	.sectionChords {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.column {
+			min-width: 25%;
+			div {
+				padding: 5px;
+				display: flex;
+				flex-direction: column;
+				.chordPart{
+					text-align: center;
+					background-color: $color3;
+				}
+				p {
+					display: flex;
+					flex-direction: column;
+					padding: 8px 0;
+					span {
+						text-align: center;
+					}
+				}	
+			}
+		}
+	}
+}
+
+.d-none{
+	display: none !important;
+}
